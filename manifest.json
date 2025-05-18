@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "HTML 文件下载",
+  "description": "将HTML代码片段下载为保留格式的HTML文件。คลิกไอคอนเพื่อดาวน์โหลดโค้ด HTML จากคลิปบอร์ดโดยอัตโนมัติ",
+  "version": "1.1.0",
+  "permissions": [
+    "clipboardRead",
+    "storage",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "HTML 文件下载 (点击自动下载剪贴板内容)",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+} 

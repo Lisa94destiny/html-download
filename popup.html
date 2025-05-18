@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML文件下载</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="focusHelper" style="position:absolute; left: -9999px; width:1px; height:1px; opacity:0;">Focus Me</button>
+  <div class="container">
+    <header>
+      <h1>HTML文件下载</h1>
+      <p class="subtitle">HTML File Download</p>
+    </header>
+    
+    <main>
+      <div class="code-container">
+        <textarea id="htmlCode" placeholder="将自动粘贴剪贴板内容..."></textarea>
+      </div>
+      
+      <div class="actions">
+        <button id="clearBtn" class="btn primary">清空代码</button>
+        <button id="downloadBtn" class="btn secondary">下载HTML</button>
+      </div>
+    </main>
+    
+    <footer>
+      <p>粘贴和下载时会保留HTML格式</p>
+      <p class="en-note">HTML formatting is preserved</p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
